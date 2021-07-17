@@ -18,8 +18,7 @@ public class Calculator {
         if (y != 0) {
             return x / y;
         } else {
-            System.out.println("На ноль делить нельзя");
-            return 0;
+            throw new ArithmeticException("На ноль делить нельзя!");
         }
     };
 
